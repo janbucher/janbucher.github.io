@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/sky.css">
+		<link rel="stylesheet" href="rica.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+
+
+
+				<section data-background="">
+				  <h2><strong>No legislation<br /> without<br /> cooperation?</strong> </h2>
+				  <h4>Networked predictors of<br /> cosponsorship in the 17<sup><small>th</small></sup> Bundestag</h4>
+					<h5>Jan Bucher<sup><small>*</small></sup></h5>
+				  <p class="footnote"><sup><small>*</small></sup> PhD fellow, University Heidelberg
+						 &amp; Lecturer, R&amp;D Digital Didactics, Aalen University.
+				  janbucher@gmail.com.</p>
+				</section>
+
+				<section data-background="">
+                                  <h4>Cosponsorship?</h4>
+                                  <img src='1800763.png' class='plain' />
+				</section>
+
+
+
+				<section>
+                                  <h4>Cosponsorship in the 17th Bundestag</h4>
+
+						<object type="image/svg+xml" data="figures/17-greens-network.svg" height='40%'></object>
+						<p class="figure"><em>Figure 1</em> Network of motions cosponsorship in the Green Party 2010. </p>
+						<p class="footnote">Csardi, Gabor and Tamas Nepusz. 2006. “The igraph software package for complex network research.” InterJournal Complex Systems: 1695.</p>
+
+				</section>
+
+				<section data-background="../media/pnbgblured.png">
+          <h4>Theoretical framework</h4>
+				  <p>Competing principals theory (Carey 2007).</p>
+					<p class="footnote">Carey, John M. 2007. “Competing principals, political institutions, and party unity in legislative voting.” American Journal of Political Science 51(1):92– 107.</p>
+
+				  </ul>
+				</section>
+
+
+
+				<section>
+					<section>
+				  	  <p class='question'>Who are the principals able to concert collective action?</p>
+				  	  <p class='question'>How can we identify competing principals of MPs?</p>
+				  	  <p class='question'><strong>Is each competing principal effective in establishing collective action in parliament?</strong></p>
+				  	  <p class='question'>What are the features of a successful principal?</p>
+					</section>
+				</section>
+
+				<section data-background="../media/pnbgblured.png">
+                                  <h3> Who are the principals able to concert collective action?</h3>
+                                  <h4><strong> Principal agent criteria:</strong></h4>
+                                  <ul>
+					<li>Delegation</li>
+					<li>Revocability of delegation</li>
+                                        <li>Accountability</li>
+                                        <li>Monitoring</li>
+                                        <li>Information asymmetry</li>
+                                        <li>...</li>
+				  </ul>
+				</section>
+
+				<section>
+                                  <h3><strong> Principals of members of the Bundestag</strong></h4>
+                                  <ul>
+					<li>Parliamentary party group (PPG)</li>
+					<li>State party / Parliamentary state party group</li>
+                                        <li>District assembly / Local party groups</li>
+				  </ul>
+				</section>
+
+
+
+
+				<section data-background="../media/pnbgblured.png">
+					<section>
+				  	  <h4>H<small><sub>1</sub></small></h4>
+				  	  <p class='question'>The more similar two given MPs are specialized, the more likely they cosponsor a motion. </p>
+					</section>
+					<section>
+				  	  <h4>H<small><sub>2</sub></small></h4>
+				  	  <p class='question'>Members of parliament will more likely collaborate with MPs from the same state.
+ </p>
+					</section>
+					<section>
+				  	  <h4>H<small><sub>3</sub></small></h4>
+				  	  <p class='question'>Members of parliament will more likely collaborate with MPs in their districts' proximity. </p>
+					</section>
+					<section>
+				  	  <h4>H<small><sub>3A</sub></small></h4>
+				  	  <p class='question'>Members of parliament elected by district vote will more likely collaborate with (any kind of) MPs. </p>
+				  	  <h4>H<small><sub>3B</sub></small></h4>
+				  	  <p class='question'>Members of parliament elected by district vote will more likely collaborate with other district MPs. </p>
+					</section>
+					<section>
+				  	  <h4>H<small><sub>4</sub></small> (Stability / Structural cooperation)</h4>
+				  	  <p class='question'>The more two given members of parliament co-signed / cospsonsored motions in the past, the more likely they will cosponsor a motion in the future. </p>
+
+					</section>
+
+				</section>
+
+
+				<section data-background="../media/pnbgblured.png">
+					<h4>Methodological framework</h4>
+					<p>Time dependend exponential random graph models (TERGM).</p>
+					<p class="footnote">Cranmer, Skyler J and Bruce A Desmarais. 2011. “Inferential network analysis with exponential random graph models.” Political Analysis 19(1):66–86.
+</p>
+
+					</ul>
+				</section>
+
+				<section data-background="../media/pnbgblured.png">
+                                  <h4>Operationalisation H1: Cospecialisation</h4>
+				  <ul><li>Network of group membership of MPs</li>
+					<li>Mainly committee membership (also step-ins) (Louwerse and Otjes, 2011)</li>
+				  </ul>
+				</section>
+
+				<section data-background="../media/pnbgblured.png">
+                                  <h4>Operationalisation H2: State</h4>
+				  <ul><li>Membership in state party group (SPD)</li>
+				      <li>or state home state of district (Left and Green Party) </li>
+				      <li>.. both also synonymous for state party membership</li>
+				  </ul>
+				</section>
+
+				<section data-background="../media/pnbgblured.png">
+                                  <h4>District neighbourhoods</h4>
+             			  <object type="image/svg+xml" data="../../papers/8-opposition-as-standby-government-or-election-machines/figures/17-plot-districts-onepage.svg" height='100%'></object>
+				</section>
+
+
+				<section data-background="../media/pnbgblured.png">
+                                  <h4>Operationalisation H3: District neighborship</h4>
+				  <ul><li>Network of MP districts</li>
+				      <li>weighted by distance between the center of gravity for each district</li>
+				  </ul>
+				</section>
+
+				<section data-background="../media/pnbgblured.png">
+                                  <h4>Operationalisation H3a/b: District </h4>
+				  <ul><li>Feature of individual MPs</li>
+				      <li>(a) Mandate type of individual MP</li>
+				      <li>(b) Shared features of MPs (homophily)</li>
+				  </ul>
+				</section>
+
+				<section data-background="../media/pnbgblured.png">
+          <h4>Operationalisation H4: Stability / Structure </h4>
+				  <ul>
+					 <li>Time series of cosponsorship networks.</li>
+					 <li>Stability term in TERGM.</li>
+				  </ul>
+				</section>
+
+
+								<section data-background="../media/pnbgblured.png">
+				                                  <h4>Dependend variable</h4>
+																					<object type="image/svg+xml" data="figures/17-greens-network.svg" height='40%'></object>
+								</section>
+
+				<section data-background="">
+                                  <h4>Modelling</h4>
+                                  <img src='green-models.png' class='plain' />
+				</section>
+
+
+
+
+				<section data-background="../media/pnbgblured.png">
+             			<object type="image/svg+xml" data="hypothesis-summary.svg" width='100%'></object>
+				</section>
+
+				<section data-background="../media/pnbgblured.png">
+                                  <h4>Goodness of fit</h4>
+             			  <object type="image/svg+xml" data="pds-model-final.svg" height='100%'></object>
+				</section>
+
+
+
+				<section data-background="../media/pnbg.png">
+				  <h1><strong>Tak!</strong></h1>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+		document.getElementsByTagName('html')[0].mozRequestFullScreen();void(0)
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+			// Transition style
+    				transition: 'fade', // none/fade/slide/convex/concave/zoom
+				keyboard: {
+   				 9: 'next', // go to the next slide when the TAB key is pressed
+   				 13: 'prev', // go to the previous slide when the ENTER key is pressed
+				 //27: function() {}, // do something custom when ESC is pressed
+				 32: null // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
+
+  				},
+
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+				        { src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'custom/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } }
+				]
+			});
+		</script>
+	</body>
+</html>
